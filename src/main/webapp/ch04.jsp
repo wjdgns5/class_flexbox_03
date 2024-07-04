@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,32 +7,37 @@
 <title>Insert title here</title>
 
 <style type="text/css">
-	
-	body {
-	display: flex;
+body {
+	width: 100%;
 	height: 100vh;
-	width: 100vh;
-	margin: 0;
-	padding: 0;
-	
 }
 
-	.container {
-		flex-direction: row;
-	}
-	
-	
+.container {
+	display: flex;
+	height: 100%;
+	flex-direction: row;
+	background-color: blue;
+}
+
+.item {
+	flex-grow: 1;
+	border: 1px solid black;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 </style>
 
 
 </head>
 <body>
 
-<div class = container>
-	<div class= item>item1</div>
-	<div class= item>item1</div>
-	<div class= item>item1</div>
-</div>
+	<div class="container">
+		<div class="item ">item1</div>
+		<div class="item ">item2</div>
+		<div class="item ">item3</div>
+	</div>
 
 </body>
 </html>
